@@ -1,0 +1,27 @@
+<header class="topStrip">
+			<div class="logo">
+				<img src="images/task2.png" alt="logo">
+				<h1>ToDoList</h1>
+			</div>
+		</header>
+<! -- Where you add items to the list -->
+		<section class="listBox">
+			<div class="addItem">
+				<form ng-submit="addTodo()">
+					<button class="submitButton" type="submit" alt="Submit">
+						<img class="buttonImage" src="Images/plusButton.png">
+					</button>
+					<input class="listText" placeholder="Start typing here to add items to your list." type="text" ng-model="todoText" />
+				</form>
+			</div>
+		</section>
+<!-- items that have been added to the list -->
+		<section class="listItems">
+			<div class"addListItem">    
+				<div class="singleListItem" ng-repeat="todo in todos">
+					<input id="checkbox" type="checkbox" class="checkbox" ng-model="todo.done" />
+					<input id="checkBoxText" type="text" for="checkbox" ng-model="todo.text"/>
+					<img class="closeButton" src="Images/xButton.png" ng-click="removeTodo($index)">
+				</div>
+			</div>
+		</section>
