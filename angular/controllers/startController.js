@@ -1,8 +1,6 @@
-ourApp.controller('startController', ['$scope', function($scope) {
-    //js code
+toDoList.controller('startController', ['$scope', function($scope) {
     $scope.todos = [
-      {done: false, text: 'first'},
-      {done: false, text: 'second'}
+      
     ];
 
     $scope.addTodo = function() {

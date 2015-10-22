@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en"  ng-app="appName">
+<html lang="en"  ng-app="toDoList">
 <head>
 	<meta charset="UTF-8">
 	<title>To Do List</title>
@@ -9,6 +9,17 @@
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+	<header class="topStrip">
+		<div class="logo">
+			<img src="images/task2.png" alt="logo">
+			<h1><a ng-href="#/">ToDoList</a></h1>
+		</div>
+		<nav>
+			<ul>
+				<li><a ng-href="#/about">About This App</a></li>
+			</ul>
+		</nav>
+	</header>
 	<div  ng-view class="main">
 		
 	</div>

@@ -1,13 +1,13 @@
-var ourApp = angular.module('appName', ['ngRoute']);
+var toDoList = angular.module('toDoList', ['ngRoute']);
   
-ourApp.config(['$routeProvider', function($routeProvider) {
+toDoList.config(['$routeProvider', function($routeProvider) {
     $routeProvider.
       when('/', {
         templateUrl: 'angular/templates/start.html',
         controller: 'startController'
       })
-      .when('/aboutMe', {
-        templateUrl: 'angular/templates/about-me.html',
+      .when('/about', {
+        templateUrl: 'angular/templates/about.html',
       }).
       otherwise({
         redirectTo: '/'
